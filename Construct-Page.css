@@ -1,0 +1,596 @@
+/*Welcome to construct page*/
+
+
+
+/*Css Code Starts here*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,300;0,500;0,700;0,900;1,400;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+.max-width{
+    max-width: 1200px;
+    padding: 0px 60px;
+    margin: auto;
+}
+
+
+/*Navigation bar section*/
+.navbar{
+    position: fixed;
+    width: 100%;
+    padding: 7px 0;
+    font-family: "Roboto", sans-serif;
+    z-index: 999;
+}
+
+.navbar.sticky{
+    padding: 7px 0;
+    background-color: rgb(255, 255, 255);
+}
+
+.navbar .logo a.sticky{
+    color: rgb(0, 0, 0);
+}
+
+.navbar .menu li a.sticky{
+    color: black;
+}
+
+.navbar .menu.sticky{
+    background-color: rgb(255, 255, 255);
+}
+
+
+.dark-menu-btn.sticky{
+    display: none;
+}
+
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo a{
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a{
+    position: relative;
+    display: block;
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 30px;
+    opacity: 100%;
+}
+.navbar .menu li a:hover{
+    color: magenta;
+    transition: all 0.2s linear;
+}
+
+.navbar .icon{
+    display: none;
+    position: fixed;
+}
+
+/* Menu Button */
+.menu-btn{
+    cursor: pointer;
+    background-color: black;
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-position: center;
+    background-size: cover;
+    padding: 0.8%;
+    position: relative;
+}
+
+
+.content{
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    color: white;
+    line-height: 3.5rem;
+}
+
+.content h1{
+    width: 100%;
+    font-weight: 600;
+    font-size: 75px;
+}
+
+.content h1 span{
+    color: pink;
+}
+
+.content .email input{
+    width: 55%;
+    height: 45px;
+    border-radius: 7px;
+}
+
+.Form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .field {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .email input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .email button {
+    padding: 12px 22px;
+    background-color: transparent;
+    color: pink;
+    border: 2px solid pink;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  /*Countdown*/
+
+.countdown-timer{
+    display: flex;
+}
+
+.countdown-timer div{
+    flex-basis: 100%;
+}
+
+.countdown-timer div p{
+    font-size: 60px;
+    margin-bottom: -14px;
+}
+
+
+/*Animated text*/
+.typewrite{
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+}
+
+/*Video Home background*/
+.background-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+}
+
+
+
+
+/*Footer Section*/
+.jar{
+    max-width: 1170px;
+    margin: auto;
+}
+.rowwer{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer{
+    background-color: rgb(0, 0, 0);
+    padding: 45px 0;
+}
+.footer-col{
+    width: 25%;
+    padding: 0 10px;
+}
+
+.footer-col h4{
+    font-family: 'Montesserat', sans-serif;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    text-transform: capitalize;
+    margin-left: 5px;
+    margin-bottom: -20px;
+    font-weight: 600;
+    position: relative;
+}
+
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: pink;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.each{
+    width: 25%;
+    padding: 0 10px;
+}
+
+.each h4{
+    font-family: 'Montesserat', sans-serif;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    text-transform: capitalize;
+    margin-left: 156px;
+    margin-bottom: 35px;
+    font-weight: 600;
+    position: relative;
+}
+
+.each h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: pink;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col .Quote{
+    margin-top: 30px;
+    font-size: 15px;
+    font-weight: 300;
+    width: 100%;
+    color: rgb(129, 126, 126);
+    margin-bottom: 27px;
+}
+
+.footer-col .copyright{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 13px;
+    margin-top: 90px;
+    margin-left: 350px;
+    width: 100%;
+    color: rgb(161, 159, 159);
+    width: 520px;
+}
+
+.footer-col .sentence{
+    width: 100%;
+    display: flex;
+    margin-top: 75px;
+    color: #6a6666;
+    width: 400px;
+    font-size: 17px;
+}
+
+.each .info{
+    font-size: 14px;
+    width: 100%;
+    color: rgb(106, 104, 104);
+    margin-left: 156px;
+    margin-bottom: 10px;
+}
+
+.each .info-1{
+    font-size: 14px;
+    width: 100%;
+    color: rgb(106, 104, 104);
+    margin-left: 156px;
+    margin-bottom: 15px;
+}
+
+.each .info-2{
+    font-size: 14px;
+    width: 100%;
+    color: rgb(106, 104, 104);
+    margin-left: 156px;
+    margin-bottom: 15px;
+}
+
+.each .info-3{
+    font-size: 14px;
+    width: 100%;
+    color: rgb(106, 104, 104);
+    margin-left: 156px;
+    margin-bottom: 15px;
+}
+
+.each .ul a:hover{
+    color: rgb(255, 255, 255);
+}
+.each .social-link a{
+    display: inline-block;
+    height: 35px;
+    width: 130px;
+    margin-left: 156px;
+    line-height: 40px;
+    color: rgb(106, 104, 104);
+    transition: all 0.8s ease;
+}
+.each .social-link a:hover{
+    margin-left: 167px;
+    color: #0f0f0f;
+}
+
+.each .ul a{
+    display: inline-block;
+    height: 35px;
+    width: 130px;
+    margin-left: 156px;
+    line-height: 40px;
+    color: rgb(153, 153, 153);
+    transition: all 0.8s ease;
+}
+.each .ul a:hover{
+    color: #0f0f0f;
+}
+
+/* Responsive Media Query */
+@media (max-width: 1920px){
+    .home .max-width{
+        margin-left: 0px;
+    }
+    .menu-btn{
+        display: none;
+        z-index: 999;
+    }
+
+}
+@media (max-width: 1104px){
+    .menu-btn{
+        display: none;
+        z-index: 999;
+    } 
+}
+
+@media (min-width: 1020px) {
+
+    html,body{
+        overflow-x: hidden;
+    }
+
+    
+    .menu-btn{
+        display: none;
+        z-index: 999;
+    } 
+
+}
+/*mobile/Tablet*/
+@media (max-width: 900px) {
+
+    .menu-btn{
+        display: block;
+        z-index: 999;
+    }
+    .navbar .menu{
+        position: fixed;
+        height: 100vh;
+        width: 70%;
+        left: -100%;
+        top: 0;
+        background: rgb(180, 180, 180);
+        opacity: 90%;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+    .navbar .menu.active{
+        left: 0;
+    }
+    .navbar .menu li{
+        display: block;
+    }
+    .navbar .menu li a{
+            height: 50px;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+    }
+
+    .navbar .menu li a:hover{
+        display: flex;
+        color: pink;
+    }
+
+    .navbar .icon{
+        display: block;
+        position: relative;
+        min-width: 60px;
+        border-radius: 6px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+    }
+
+    .content .typewrite{
+        font-size: 20px;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .content{
+        line-height: 3rem;
+    }
+
+    .content h1{
+        font-size: 43px;
+        font-weight: 600;
+    }
+
+    .content p{
+        font-size: 12px;
+        width: 100%;
+        margin-left: 1px;
+    }
+
+    .content .email input{
+        height: 35px;
+        width: 60%;
+    }
+
+    .content .email button{
+        padding: 8px 15px;
+    }
+
+    .countdown-timer div p{
+        font-size: 40px;
+        margin-bottom: -14px;
+    }
+
+    .countdown-timer div{
+        flex-basis: 10%;
+        margin-left: 25px;
+    }
+
+    .countdown-timer{
+        font-size: 12px;
+    }
+
+    .max-width{
+        padding: 0px 40px;
+    }
+    .jar{
+        max-width: 1170px;
+        margin: auto;
+    }
+    .rowwer{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .footer{
+        background-color: rgb(0, 0, 0);
+        padding: 45px 0;
+    }
+    .footer-col{
+        width: 105%;
+        padding: 0 10px;
+    }
+    
+    .footer-col h4{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        font-family: 'Montesserat', sans-serif;
+        font-size: 18px;
+        color: rgb(255, 255, 255);
+        text-transform: capitalize;
+        margin-left: 5px;
+        margin-bottom: -20px;
+        font-weight: 600;
+        position: relative;
+    }
+    
+    .footer-col h4::before{
+        display: none;
+    }
+    
+    .each{
+        width: 105%;
+    }
+    
+    .each h4{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        margin-left: 10px;
+        margin-top: 50px;
+        font-family: 'Montesserat', sans-serif;
+        font-size: 18px;
+        color: rgb(255, 255, 255);
+        text-transform: capitalize;
+        font-weight: 600;
+        position: relative;
+    }
+    
+    .each h4::before{
+        display: none;
+    }
+    
+    .footer-col .Quote{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        margin-left: 0;
+        margin-top: 30px;
+        font-size: 15px;
+        font-weight: 300;
+        width: 100%;
+        color: rgb(129, 126, 126);
+        margin-bottom: 27px;
+    }
+    
+    .footer-col .copyright{
+        display: none;
+    }
+    
+    .footer-col .sentence{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+        margin-left: 10px;
+        margin-top: 75px;
+        color: #6a6666;
+        font-size: 17px;
+    }
+    
+    
+    
+    .each .ul a{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        height: 35px;
+        width: 100%;
+        margin-left: 2px;
+        line-height: 40px;
+        color: rgb(166, 166, 166);
+        transition: all 0.8s ease;
+    }
+    
+    .each .social-link a{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        height: 35px;
+        width: 100%;
+        margin-left: 2px;
+        color: rgb(106, 104, 104);
+        transition: all 0.8s ease;
+    }
+    
+}
+
